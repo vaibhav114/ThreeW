@@ -12,7 +12,7 @@ app.use(cors())
 
 app.use('/points', UserRouter);
 
-app.get('/',()=>{
+app.get('/',(req,res)=>{
     return res.json({"MSG":"Get All Users EndPoint : /points/getalluser"})
 })
 
