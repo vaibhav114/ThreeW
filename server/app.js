@@ -12,7 +12,9 @@ app.use(cors())
 
 app.use('/points', UserRouter);
 
-
+app.get('/',()=>{
+    return res.json({"MSG":"Get All Users EndPoint : /points/getalluser"})
+})
 
 const start = async ()=>{
     try {
